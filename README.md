@@ -21,14 +21,16 @@
 
 > One click deploys to △ now
 
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/evenchange4/micro-github-latest&env=ORIGIN)
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/evenchange4/micro-github-latest&env=ORIGIN&env=ACCESS_TOKEN)
 
 ### b. Binary executable file
 
 Download from GitHub [latest release](https://github.com/evenchange4/micro-github-latest/releases/latest).
 
 ```
-$ ORIGIN=$YOUR_DOMAIN ./micro-github-latest-macos $PORT
+$ ORIGIN=$YOUR_DOMAIN \
+  ACCESS_TOKEN=$GITHUB_ACCESS_TOKEN \
+  ./micro-github-latest-macos $PORT
 ```
 
 > Note: You can run it without Node.js installed.
@@ -42,6 +44,7 @@ $ docker pull evenchange4/micro-github-latest:latest
 $ docker run --rm -it \
   -p $PORT:3000 \
   -e "ORIGIN=YOUR_DOMAIN" \
+  -e "ACCESS_TOKEN=GITHUB_ACCESS_TOKEN" \
   evenchange4/micro-github-latest:latest
 ```
 
@@ -52,6 +55,7 @@ $ docker run --rm -it \
 | **ENV**   | **Required**  | **Default**  | **Description** |
 | --------- | --------- | --------- | --------- |
 | `ORIGIN`  |  | `*` | Setup `access-control-allow-origin` for CORS. |
+| `ACCESS_TOKEN`  |  |  | Setup [GitHub access token](https://github.com/settings/tokens/new) with the `repo` scope. |
 
 ### CLI arguments
 
@@ -63,19 +67,12 @@ $ docker run --rm -it \
 
 | *Method** | *Pathname** | **Description** |
 | --------- | --------- | --------- |
-| GET | `/@:username/posts` | Latest posts |
-
-### URL query parameters
-
-| **Query**   | **Required**  | **Default**  | **Description** |
-| --------- | --------- | --------- | --------- |
-| `limit`  |  | `10` | Medium API |
-| `type`  |  |  | A simple array returned if set the value to `simple`. |
+| GET | `/:owner/:repo/:name/latest` | 302 redirect to the latest release filtered by name |
+| GET | `/:owner/:repo/latest` | 302 redirect to the first asset of latest release |
 
 ## Demo
 
-- https://micro-github-latest.now.sh/@evenchange4/posts?limit=100&type=simple
-- Real-World case:  [michaelhsu.tw](https://michaelhsu.tw/) [[source code](https://github.com/evenchange4/michaelhsu.tw)]
+https://micro-github-latest.now.sh/evenchange4/micro-medium-api/macos/latest
 
 > Note: You should deploy your own service for production usage.
 
@@ -121,10 +118,6 @@ $ docker build -t mirco-medium-api .
 # Push to dockerhub
 $ git push
 ```
-
-## Inspiration
-
-- https://github.com/enginebai/PyMedium
 
 ## CONTRIBUTING
 
