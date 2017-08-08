@@ -65,7 +65,7 @@ $ docker run --rm -it \
 
 ### URL pathname
 
-| *Method** | *Pathname** | **Description** |
+| **Method** | **Pathname** | **Description** |
 | --------- | --------- | --------- |
 | GET | `/:owner/:repo/:name/latest` | 302 redirect to the latest release filtered by name |
 | GET | `/:owner/:repo/latest` | 302 redirect to the first asset of latest release |
