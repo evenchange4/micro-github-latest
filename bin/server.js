@@ -3,7 +3,7 @@
  *
  * example:
  *
- * $ ./micro-medium-api 3001
+ * $ ./micro-github-latest 3001
  *
  * @author Michael Hsu
  */
@@ -13,6 +13,6 @@ const main = require('../src/index');
 
 const PORT = process.argv[2] || 3000;
 
-console.log(`> [Mirco-medium-api] server is running on port ${PORT}`); // eslint-disable-line
+console.log(`> [Mirco-github-latest] server is running on port ${PORT}`); // eslint-disable-line
 
 micro(main).listen(PORT);

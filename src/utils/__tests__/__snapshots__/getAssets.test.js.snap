@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return getAssets list 1`] = `
+Array [
+  "https://github.com/evenchange4/micro-medium-api/releases/download/v1.1.0/micro-medium-api-linux",
+  "https://github.com/evenchange4/micro-medium-api/releases/download/v1.1.0/micro-medium-api-macos",
+  "https://github.com/evenchange4/micro-medium-api/releases/download/v1.1.0/micro-medium-api-win.exe",
+]
+`;

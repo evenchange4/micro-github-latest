@@ -1,9 +1,5 @@
 const API = require('../API');
 
-jest.mock('axios', () => ({
-  request: (url, options) => ({ url, options }),
-}));
-
-it('should return API getPosts', () => {
-  expect(API.getPosts('username', {})).toMatchSnapshot();
+it('should return API getRepo function', () => {
+  expect(typeof API.getRepo).toBe('function');
 });

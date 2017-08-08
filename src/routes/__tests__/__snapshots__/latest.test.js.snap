@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return latest with 404 1`] = `
+Object {
+  "code": 404,
+  "content": [Error: Asset not found.],
+  "res": undefined,
+}
+`;
+
+exports[`should return latest with error 1`] = `
+Object {
+  "code": 404,
+  "content": [Error: error],
+  "res": undefined,
+}
+`;
+
+exports[`should return latest with name 1`] = `
+Object {
+  "res": undefined,
+  "statusCode": 302,
+  "url": "2",
+}
+`;
+
+exports[`should return latest without name 1`] = `
+Object {
+  "res": undefined,
+  "statusCode": 302,
+  "url": "1",
+}
+`;

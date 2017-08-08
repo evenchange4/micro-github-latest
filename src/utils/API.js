@@ -1,14 +1,27 @@
-const axios = require('axios');
-const queryString = require('./queryString');
-const { BASE_URL } = require('./constants');
+const GitHubApi = require('github');
 
-const getPosts = (username, query) =>
-  axios.request(`@${username}/latest?${queryString(query)}`, {
-    method: 'get',
-    baseURL: BASE_URL,
-    responseType: 'text',
+const github = new GitHubApi({
+  protocol: 'https',
+  host: 'api.github.com',
+});
+
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
+
+if (ACCESS_TOKEN) {
+  github.authenticate({
+    type: 'token',
+    token: ACCESS_TOKEN,
+  });
+}
+
+const getRepo = (owner, repo) =>
+  new Promise((resolve, reject) => {
+    github.repos.getLatestRelease({ owner, repo }, (err, res) => {
+      if (err) return reject(err);
+      return resolve(res);
+    });
   });
 
 module.exports = {
-  getPosts,
+  getRepo,
 };

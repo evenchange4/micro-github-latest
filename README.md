@@ -1,5 +1,5 @@
-# Micro-medium-api
-> Microservice for fetching the latest posts of Medium.
+# Micro-github-latest
+> Microservice for fetching the latest release of GitHub.
 
 [![Travis][travis-badge]][travis]
 [![Codecov Status][codecov-badge]][codecov]
@@ -21,14 +21,14 @@
 
 > One click deploys to △ now
 
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/evenchange4/micro-medium-api&env=ORIGIN)
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/evenchange4/micro-github-latest&env=ORIGIN)
 
 ### b. Binary executable file
 
-Download from GitHub [latest release](https://github.com/evenchange4/micro-medium-api/releases/latest).
+Download from GitHub [latest release](https://github.com/evenchange4/micro-github-latest/releases/latest).
 
 ```
-$ ORIGIN=$YOUR_DOMAIN ./micro-medium-api-macos $PORT
+$ ORIGIN=$YOUR_DOMAIN ./micro-github-latest-macos $PORT
 ```
 
 > Note: You can run it without Node.js installed.
@@ -38,11 +38,11 @@ $ ORIGIN=$YOUR_DOMAIN ./micro-medium-api-macos $PORT
 Pull from [dockerhub][dockerhub].
 
 ```
-$ docker pull evenchange4/micro-medium-api:latest
+$ docker pull evenchange4/micro-github-latest:latest
 $ docker run --rm -it \
   -p $PORT:3000 \
   -e "ORIGIN=YOUR_DOMAIN" \
-  evenchange4/micro-medium-api:latest
+  evenchange4/micro-github-latest:latest
 ```
 
 ## API
@@ -74,7 +74,7 @@ $ docker run --rm -it \
 
 ## Demo
 
-- https://micro-medium-api.now.sh/@evenchange4/posts?limit=100&type=simple
+- https://micro-github-latest.now.sh/@evenchange4/posts?limit=100&type=simple
 - Real-World case:  [michaelhsu.tw](https://michaelhsu.tw/) [[source code](https://github.com/evenchange4/michaelhsu.tw)]
 
 > Note: You should deploy your own service for production usage.
@@ -97,7 +97,7 @@ $ docker run --rm -it \
 -   yarn >= 0.27.5
 
 ```
-$ git clone https://github.com/evenchange4/micro-medium-api.git
+$ git clone https://github.com/evenchange4/micro-github-latest.git
 $ yarn install --pure-lockfile
 
 $ yarn run dev # dev server
@@ -138,24 +138,24 @@ $ git push
 
 MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 
-[travis-badge]: https://img.shields.io/travis/evenchange4/micro-medium-api/master.svg?style=flat-square
-[travis]: https://travis-ci.org/evenchange4/micro-medium-api
-[codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/micro-medium-api.svg?style=flat-square
-[codecov]: https://codecov.io/github/evenchange4/micro-medium-api?branch=master
-[dependency-badge]: https://david-dm.org/evenchange4/micro-medium-api.svg?style=flat-square
-[dependency]: https://david-dm.org/evenchange4/micro-medium-api
-[devDependency-badge]: https://david-dm.org/evenchange4/micro-medium-api/dev-status.svg?style=flat-square
-[devDependency]: https://david-dm.org/evenchange4/micro-medium-api#info=devDependencies
-[peerDependency-badge]: https://david-dm.org/evenchange4/micro-medium-api/peer-status.svg?style=flat-square
-[peerDependency]: https://david-dm.org/evenchange4/micro-medium-api#info=peerDependencies
-[githubTag-badge]: https://img.shields.io/github/tag/evenchange4/micro-medium-api.svg?style=flat-square
+[travis-badge]: https://img.shields.io/travis/evenchange4/micro-github-latest/master.svg?style=flat-square
+[travis]: https://travis-ci.org/evenchange4/micro-github-latest
+[codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/micro-github-latest.svg?style=flat-square
+[codecov]: https://codecov.io/github/evenchange4/micro-github-latest?branch=master
+[dependency-badge]: https://david-dm.org/evenchange4/micro-github-latest.svg?style=flat-square
+[dependency]: https://david-dm.org/evenchange4/micro-github-latest
+[devDependency-badge]: https://david-dm.org/evenchange4/micro-github-latest/dev-status.svg?style=flat-square
+[devDependency]: https://david-dm.org/evenchange4/micro-github-latest#info=devDependencies
+[peerDependency-badge]: https://david-dm.org/evenchange4/micro-github-latest/peer-status.svg?style=flat-square
+[peerDependency]: https://david-dm.org/evenchange4/micro-github-latest#info=peerDependencies
+[githubTag-badge]: https://img.shields.io/github/tag/evenchange4/micro-github-latest.svg?style=flat-square
 [githubTag]: ./CHANGELOG.md
-[license-badge]: https://img.shields.io/github/license/evenchange4/micro-medium-api.svg?style=flat-square
+[license-badge]: https://img.shields.io/github/license/evenchange4/micro-github-latest.svg?style=flat-square
 [license]: http://michaelhsu.mit-license.org/
-[greenkeeper-badge]: https://badges.greenkeeper.io/evenchange4/micro-medium-api.svg
+[greenkeeper-badge]: https://badges.greenkeeper.io/evenchange4/micro-github-latest.svg
 [greenkeeper]: https://greenkeeper.io/
-[dockerhub-auto-badge]: https://img.shields.io/docker/automated/evenchange4/micro-medium-api.svg
-[dockerhub-badge]: https://img.shields.io/docker/build/evenchange4/micro-medium-api.svg
-[dockerhub]: https://hub.docker.com/r/evenchange4/micro-medium-api/
+[dockerhub-auto-badge]: https://img.shields.io/docker/automated/evenchange4/micro-github-latest.svg
+[dockerhub-badge]: https://img.shields.io/docker/build/evenchange4/micro-github-latest.svg
+[dockerhub]: https://hub.docker.com/r/evenchange4/micro-github-latest/
 [prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg
 [prettier]: https://github.com/prettier/prettier

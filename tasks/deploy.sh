@@ -4,9 +4,10 @@ set -e
 
 # Arguments
 ORIGIN='*'
-ALIAS='micro-medium-api.now.sh'
+# ACCESS_TOKEN='OPTION'
+ALIAS='micro-github-latest.now.sh'
 # Project config
-TEAM=micro-medium-api
+TEAM=github-latest
 
 alias now="node_modules/.bin/now"
 alias now-purge="node_modules/.bin/now-purge"

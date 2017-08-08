@@ -2,7 +2,7 @@ const R = require('ramda');
 const { router, get } = require('microrouter');
 const compress = require('micro-compress');
 const cors = require('micro-cors');
-const posts = require('./routes/posts');
+const latest = require('./routes/latest');
 const home = require('./routes/home');
 
 const ORIGIN = process.env.ORIGIN;
@@ -17,6 +17,7 @@ const enhance = R.compose(
 );
 
 module.exports = router(
-  get('/@:username/posts', enhance(posts)),
+  get('/:owner/:repo/:name/latest', enhance(latest)),
+  get('/:owner/:repo/latest', enhance(latest)),
   get('*', enhance(home)),
 );
