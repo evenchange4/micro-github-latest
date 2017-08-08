@@ -31,5 +31,16 @@ cache:
     - "~/.yarn"
     - node_modules
 
+deploy:
+  provider: releases
+  api_key:
+    secure: W6RLAW4INlstaOcxfwvtdiGonVK/dCQs1YTJ15bAQF6+aVjZRTX+RHUwgQipDqZofSbmbEyAYQ7pCjBUer5vCklAbInYNtkCr4zLBPIMHMsvLJ6AALHkuXDRgspF3EO29v7U+gLoK0k3+MzIrZ/1opHmzURWD3LqNuaJHJa/7n7OndmACVOwYB/ijgDCIVF2F7ttBVeE3dR5f5zSAz4xcG91Cz17jvI+ZGAvAiB4ScOFxB+M/1yDleYXz599O9fMYSjLRV7ieu63/HxpH6kXTia+jRgWC7oTvVQZI1cDRmpTdjrxyuyuQH5NY+9bcjsM7T5jEfU1FUEu9hraU2Ig+VFXZVQ/3yyGHZ32MNaU6A5eRH5VX6wV3mYaU6m3h6FkvZZUJb6Fszxxd/b3BeYy2Rno5M+mX5cWZyCGCk6LdOfNoACn/M5UsCmn7IpGYFnWlEk+e/vtpb1OBHcf0MRQqClO9GtYst12GVke7b2u5WJRBWUmCnJH9Nrfu7CBmGwGuWELTncS/UXqzs7CwPmLHjHMmI3vRBi7Em/ohy00nO9gDbo254bJYhfMSDHXKUFXqsUnR1NF+UxbdLuQ1pIjmYQgnw4kIhjepiyvq8Ubyk8k2sJgoBjZNtV/Ob1VvJYcQnqZi7nmk3FwdfMj7Vb/Kvgh8uidHDmIw6/b1sljv/w=
+  file_glob: true
+  skip_cleanup: true
+  file: "./pkg/*"
+  on:
+    repo: evenchange4/micro-github-latest
+    tags: true
+
 notifications:
   email: evenchange4@gmail.com
