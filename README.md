@@ -1,5 +1,5 @@
 # Micro-github-latest
-> Microservice for fetching the latest release of GitHub.
+> Microservice for downloading the latest asset of GitHub release. 
 
 [![Travis][travis-badge]][travis]
 [![Codecov Status][codecov-badge]][codecov]
@@ -72,7 +72,9 @@ $ docker run --rm -it \
 
 ## Demo
 
-https://micro-github-latest.now.sh/evenchange4/micro-medium-api/macos/latest
+- https://micro-github-latest.now.sh/evenchange4/micro-medium-api/macos/latest
+- https://micro-github-latest.now.sh/mcs-lite/mcs-lite-app/win64/latest
+- https://micro-github-latest.now.sh/atom/atom/latest
 
 > Note: You should deploy your own service for production usage.
 
