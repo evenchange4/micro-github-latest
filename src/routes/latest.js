@@ -4,10 +4,10 @@ const API = require('../utils/API');
 const getAssets = require('../utils/getAssets');
 const redirect = require('../utils/redirect');
 
-const posts = async (req, res) => {
+const latest = async (req, res) => {
   const { owner, repo, name } = req.params;
   try {
-    const response = await API.getRepo(owner, repo);
+    const response = await API.getLatestRelease(owner, repo);
     const assets = getAssets(response);
 
     const regex = new RegExp(name);
@@ -21,4 +21,4 @@ const posts = async (req, res) => {
   }
 };
 
-module.exports = posts;
+module.exports = latest;

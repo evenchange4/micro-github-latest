@@ -9,6 +9,7 @@ const home = (req, res) =>
 
     /:owner/:repo/:name/latest
     /:owner/:repo/latest
+    /rate_limit
 `,
   );
 

@@ -3,6 +3,7 @@ const GitHubApi = require('github');
 const github = new GitHubApi({
   protocol: 'https',
   host: 'api.github.com',
+  Promise,
 });
 
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
@@ -14,14 +15,11 @@ if (ACCESS_TOKEN) {
   });
 }
 
-const getRepo = (owner, repo) =>
-  new Promise((resolve, reject) => {
-    github.repos.getLatestRelease({ owner, repo }, (err, res) => {
-      if (err) return reject(err);
-      return resolve(res);
-    });
-  });
+const getLatestRelease = (owner, repo) =>
+  github.repos.getLatestRelease({ owner, repo });
+const getRateLimit = () => github.misc.getRateLimit({});
 
 module.exports = {
-  getRepo,
+  getLatestRelease,
+  getRateLimit,
 };
