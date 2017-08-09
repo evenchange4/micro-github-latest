@@ -57,6 +57,8 @@ $ docker run --rm -it \
 | `ORIGIN`  |  | `*` | Setup `access-control-allow-origin` for CORS. |
 | `ACCESS_TOKEN`  |  |  | Setup [GitHub access token](https://github.com/settings/tokens/new) with the `repo` scope. |
 
+> Note: You should use ACCESS_TOKEN to increase the rate limit.
+
 ### CLI arguments
 
 | **Argument** | **Required**  | **Default**  | **Description** |
@@ -67,14 +69,16 @@ $ docker run --rm -it \
 
 | **Method** | **Pathname** | **Description** |
 | --------- | --------- | --------- |
-| GET | `/:owner/:repo/:name/latest` | 302 redirect to the latest release filtered by name |
-| GET | `/:owner/:repo/latest` | 302 redirect to the first asset of latest release |
+| GET | `/:owner/:repo/latest`       | 302 redirect to the first asset of latest release. |
+| GET | `/:owner/:repo/:name/latest` | 302 redirect to the first matched one by asset name of latest release. |
+| GET | `/rate_limit` | Get your current rate limit status. |
 
 ## Demo
 
 - https://micro-github-latest.now.sh/evenchange4/micro-medium-api/macos/latest
 - https://micro-github-latest.now.sh/mcs-lite/mcs-lite-app/win64/latest
 - https://micro-github-latest.now.sh/atom/atom/latest
+- https://micro-github-latest.now.sh/rate_limit
 
 > Note: You should deploy your own service for production usage.
 

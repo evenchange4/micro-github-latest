@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return limit 1`] = `
+Object {
+  "code": 200,
+  "content": Object {},
+  "res": undefined,
+}
+`;
+
+exports[`should return limit with error 1`] = `
+Object {
+  "code": 404,
+  "content": [Error: error],
+  "res": undefined,
+}
+`;

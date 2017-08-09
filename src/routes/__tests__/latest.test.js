@@ -14,7 +14,7 @@ beforeEach(() => {
 
 it('should return latest without name', async () => {
   jest.doMock('../../utils/API', () => ({
-    getRepo: (owner, repo) => ({
+    getLatestRelease: (owner, repo) => ({
       owner,
       repo,
     }),
@@ -30,7 +30,7 @@ it('should return latest without name', async () => {
 
 it('should return latest with name', async () => {
   jest.doMock('../../utils/API', () => ({
-    getRepo: (owner, repo) => ({
+    getLatestRelease: (owner, repo) => ({
       owner,
       repo,
     }),
@@ -46,7 +46,7 @@ it('should return latest with name', async () => {
 
 it('should return latest with 404', async () => {
   jest.doMock('../../utils/API', () => ({
-    getRepo: (owner, repo) => ({
+    getLatestRelease: (owner, repo) => ({
       owner,
       repo,
     }),
@@ -62,7 +62,7 @@ it('should return latest with 404', async () => {
 
 it('should return latest with error', async () => {
   jest.doMock('../../utils/API', () => ({
-    getRepo: () => {
+    getLatestRelease: () => {
       throw new Error('error');
     },
   }));

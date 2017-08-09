@@ -8,6 +8,7 @@ Object {
 
     /:owner/:repo/:name/latest
     /:owner/:repo/latest
+    /rate_limit
 ",
   "res": undefined,
 }
