@@ -4,7 +4,6 @@ set -e
 
 # Arguments
 ORIGIN='*'
-# ACCESS_TOKEN='OPTION'
 ALIAS='micro-github-latest.now.sh'
 # Project config
 TEAM=github-latest
@@ -18,7 +17,7 @@ now switch $TEAM --token "$NOW_TOKEN"
 now-purge -t "$NOW_TOKEN" --team $TEAM # make sure there is quato
 
 # 1. Wair for deployment ready
-URL=$(now -e ORIGIN="$ORIGIN" --public --token "$NOW_TOKEN")
+URL=$(now -e ORIGIN="$ORIGIN" -e ACCESS_TOKEN="$ACCESS_TOKEN" --public --token "$NOW_TOKEN")
 await-url "$URL"
 now ls --token "$NOW_TOKEN"
 
