@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "micro-github-latest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "license": "MIT",
