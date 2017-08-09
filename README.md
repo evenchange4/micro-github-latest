@@ -50,7 +50,7 @@ $ docker run --rm -it \
   evenchange4/micro-github-latest:latest
 ```
 
-### e. NPM CLI
+### d. NPM CLI
 
 Install from [npm][npm].
 
