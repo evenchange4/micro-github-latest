@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.0]
+> Aug 10, 2017
+
 * fix(deploy): drop now-purge and switch to now rm --safe
 * chore(deploy): optimize docker image & now.sh
 * feat(npm): release
