@@ -28,7 +28,10 @@
   "bin": "bin/server.js",
   "now": {
     "alias": "micro-github-latest",
-    "type": "npm"
+    "type": "npm",
+    "env": {
+      "NODE_ENV": "production"
+    }
   },
   "dependencies": {
     "github": "^9.2.0",
