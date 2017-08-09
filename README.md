@@ -1,9 +1,11 @@
 # Micro-github-latest
-> Microservice for downloading the latest asset of GitHub release. 
+> Microservice for downloading the latest asset of GitHub release.
 
 [![Travis][travis-badge]][travis]
 [![Codecov Status][codecov-badge]][codecov]
 [![Github Tag][githubTag-badge]][githubTag]
+[![npm downloads][npm-downloads]][npm]
+[![npm][npm-badge]][npm]
 [![Docker Automated build][dockerhub-auto-badge]][dockerhub]
 [![Docker Build Status][dockerhub-badge]][dockerhub]
 
@@ -23,14 +25,14 @@
 
 [![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/evenchange4/micro-github-latest&env=ORIGIN&env=ACCESS_TOKEN)
 
-### b. Binary executable file
+### b. Binary executable
 
 Download from GitHub [latest release](https://github.com/evenchange4/micro-github-latest/releases/latest).
 
 ```
 $ ORIGIN=$YOUR_DOMAIN \
   ACCESS_TOKEN=$GITHUB_ACCESS_TOKEN \
-  ./micro-github-latest-macos $PORT
+  ./micro-github-latest-macos --port $PORT
 ```
 
 > Note: You can run it without Node.js installed.
@@ -48,6 +50,20 @@ $ docker run --rm -it \
   evenchange4/micro-github-latest:latest
 ```
 
+### e. NPM CLI
+
+Install from [npm][npm].
+
+```
+$ npm i micro-github-latest -g
+
+$ ORIGIN=$YOUR_DOMAIN \
+  ACCESS_TOKEN=$GITHUB_ACCESS_TOKEN \
+  micro-github-latest --port $PORT
+```
+
+> Note: You should use Node.js >= 8 .
+
 ## API
 
 ### Environment variables
@@ -61,9 +77,15 @@ $ docker run --rm -it \
 
 ### CLI arguments
 
-| **Argument** | **Required**  | **Default**  | **Description** |
-| --------- | --------- | --------- | --------- |
-| First  |  | `3000` | PORT |
+```
+$ micro-github-latest --help
+Usage: micro-github-latest <command> [options]
+
+Options:
+  -p, --port     HTTP server PORT                                [default: 3000]
+  -h, --help     Show help                                             [boolean]
+  -v, --version  Show version number                                   [boolean]
+```
 
 ### URL pathname
 
@@ -125,6 +147,13 @@ $ docker build -t mirco-medium-api .
 $ git push
 ```
 
+### Github release / NPM release
+
+```
+$ npm version patch
+$ git push
+```
+
 ## CONTRIBUTING
 
 *   ⇄ Pull requests and ★ Stars are always welcome.
@@ -141,6 +170,9 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [travis]: https://travis-ci.org/evenchange4/micro-github-latest
 [codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/micro-github-latest.svg?style=flat-square
 [codecov]: https://codecov.io/github/evenchange4/micro-github-latest?branch=master
+[npm-badge]: https://img.shields.io/npm/v/micro-github-latest.svg?style=flat-square
+[npm]: https://www.npmjs.com/package/micro-github-latest
+[npm-downloads]: https://img.shields.io/npm/dt/micro-github-latest.svg?style=flat-square
 [dependency-badge]: https://david-dm.org/evenchange4/micro-github-latest.svg?style=flat-square
 [dependency]: https://david-dm.org/evenchange4/micro-github-latest
 [devDependency-badge]: https://david-dm.org/evenchange4/micro-github-latest/dev-status.svg?style=flat-square

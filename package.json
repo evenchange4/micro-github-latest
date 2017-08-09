@@ -1,8 +1,20 @@
 {
-  "private": true,
   "name": "micro-github-latest",
   "version": "1.0.1",
-  "main": "src/index.js",
+  "description": "Microservice for downloading the latest asset of GitHub release.",
+  "license": "MIT",
+  "repository": "evenchange4/micro-github-latest",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/evenchange4/micro-github-latest/issues",
+    "email": "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/evenchange4/micro-github-latest#readme",
+  "bin": "bin/server.js",
+  "files": [
+    "src",
+    "bin"
+  ],
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -13,6 +25,13 @@
     "format": "prettier --trailing-comma all --single-quote --write '{src,bin}/**/*.js'",
     "test": "NODE_ENV='test' TZ='UTC' jest --coverage --runInBand",
     "test:watch": "npm run test -- --watch"
+  },
+  "now": {
+    "alias": "micro-github-latest",
+    "type": "npm",
+    "env": {
+      "NODE_ENV": "production"
+    }
   },
   "jest": {
     "collectCoverageFrom": [
@@ -25,21 +44,15 @@
       "<rootDir>/pkg/"
     ]
   },
-  "bin": "bin/server.js",
-  "now": {
-    "alias": "micro-github-latest",
-    "type": "npm",
-    "env": {
-      "NODE_ENV": "production"
-    }
-  },
   "dependencies": {
     "github": "^9.2.0",
     "micro": "^8.0.1",
     "micro-compress": "^1.0.0",
     "micro-cors": "^0.0.4",
     "microrouter": "^2.2.1",
-    "ramda": "^0.24.1"
+    "ramda": "^0.24.1",
+    "update-notifier": "^2.2.0",
+    "yargs": "^8.0.2"
   },
   "devDependencies": {
     "await-url": "^0.3.0",

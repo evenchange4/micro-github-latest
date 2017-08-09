@@ -5,6 +5,9 @@
 
 * fix(deploy): drop now-purge and switch to now rm --safe
 * chore(deploy): optimize docker image & now.sh
+* feat(npm): release
+
+BREAK CHANGES: port argument
 
 ## [v1.0.1]
 > Aug 09, 2017
