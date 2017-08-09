@@ -1,6 +1,6 @@
 {
   "name": "micro-github-latest",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Microservice for downloading the latest asset of GitHub release.",
   "license": "MIT",
   "repository": "evenchange4/micro-github-latest",
@@ -15,8 +15,6 @@
     "src",
     "bin"
   ],
-  "author": "Michael Hsu <evenchange4@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "start": "micro src/index.js",
     "dev": "micro-dev src/index.js",
