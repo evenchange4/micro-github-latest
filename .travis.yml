@@ -42,11 +42,11 @@ deploy:
       repo: evenchange4/micro-github-latest
       tags: true
   - provider: npm
-    email: "evenchange4@gmail.com"
+    email: evenchange4@gmail.com
     api_key:
-      secure: "ojmvTXGWp7llKXiTw96jWudtNDbnRx0+Hsio3AduMgtqnDV5567rhRo00ERXgKRvm0f2e6LVFY4n4GZru3oiA692Baf9E6S4uYhj5WfpPgQBA192ykM3pqapnvuGhvzHttg0RYUcCQL9QjPl+kENjPIZVpRzIoAOZ36uLC1HPf0xSoPksix4Tq67ye00pwLiCpVTBcjUh+ZZ31qMYCukhKR32EuT/h84yb/qU51T20dm5kHQpUPOYedaj0upHPtZxvDjuCBeHc6FiNlDk9jngQ3jk0veFDNbtnNK7OW//qYcNhAMhJyPsQWMffc/1J67Eq6dD+OosDLGHxjLwht6DQTpvxxt9DuedeReU98tjRaIQPs+jf4tSCUl2iL5cU4XjRuFxi4SkPc9L3AuWXlMPyFZFgvSiykaV0zJY6hX1QaWi2Qh4XeYW1ctzpfaD6Qu+PdWXBKPMS8AOALe6Io9ccj/0mj1NCJjgD4+aTrvoqBobwghqbqe3jb6fazbBAubs4qiZebqUzY/ehln/4ybCXgkQJAtjeI+mviZN6AphZh8EEkWUe9vDpbzqQmU3p+9M75AdfB2i3+8ZGztLkzw6IVfeZM/io+RexzRhdBDh4yfS4930LnTEwphKx/lPJN8RRqiP83KABgq4QCUFCMv1AVaRBu6SF6LjCvUeVHUawA="
-    skip_cleanup: true
+      secure: kNk0MTZTTfjMCN0fiidV3CtbgrrjhADxysIgNUi6L93H+/YRZQvSqZDlt9ADH2HsPXRgYckS6f+uX94m/RJmJw2AGv9nh+ygkXU8Jkw+qnEdSf1vR5PIpXNn5cnZcQ6848bH8hTrOh4cZCMDEWBD59jHb54EGKphcc3McnRUnVQKRsviBSIwOZL8pCMw9+z4boY5jKxW0xHGPSpHjisUk4Ok7s0Lm2Lb84lF29wPkKFMdA53ZyikBkueSHnC2DssuFLZ3OatbSFl4peXUOWncVp+davtK88i6kNDp1mmRe5McS4bmHneCSemwWmu/erVZ0rSutphxNhZ32hpxOEKCneYWhApiG8+3R701nI1F6bfYyN7y7CtCeA9n6sk2zq1uKlVUnIRTLdpfAuz9xDuJq9VjYD7a3nGjgVazgsqUKgPqkd0CtZmgNLHJemjQz3Z0/zYwUYKtLE0cKajNZrQXAsr24Ldog6Pt4do+Xn6sgPZ0tAeve9orAJCZdJfzQtZ0jxoYASf2ksM/JPDInKC+I8YKQom2QV3aPQKJkBbRDE078A4uBZhsGuSdw/2KW71DbZcwh+CfVP8iWwQEla23Kw4zmvw0V43uUHDBL5pS/lHymnvItdGba8/G43uzIf1zMZ4sgscIQAIq3EjDcULCBSAlv15l9bqykTLRKotz8w=
     on:
+      repo: evenchange4/micro-github-latest
       tags: true
 
 notifications:
