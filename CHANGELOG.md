@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* chore(docker): optimize image size
+
 ## [v1.1.0]
 > Aug 10, 2017
 
