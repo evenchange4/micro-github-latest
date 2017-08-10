@@ -4,6 +4,7 @@
 [![Travis][travis-badge]][travis]
 [![Codecov Status][codecov-badge]][codecov]
 [![Github Tag][githubTag-badge]][githubTag]
+[![node][node]]()
 
 [![Dependency Status][dependency-badge]][dependency]
 [![devDependency Status][devDependency-badge]][devDependency]
@@ -143,7 +144,7 @@ $ yarn run test:watch
 ### Docker
 
 ```
-$ docker build -t mirco-medium-api .
+$ docker build -t micro-github-latest .
 
 # Push to dockerhub
 $ git push
@@ -174,6 +175,7 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [travis]: https://travis-ci.org/evenchange4/micro-github-latest
 [codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/micro-github-latest.svg?style=flat-square
 [codecov]: https://codecov.io/github/evenchange4/micro-github-latest?branch=master
+[node]: https://img.shields.io/node/v/micro-github-latest.svg?style=flat-square
 [npm-badge]: https://img.shields.io/npm/v/micro-github-latest.svg?style=flat-square
 [npm]: https://www.npmjs.com/package/micro-github-latest
 [npm-downloads]: https://img.shields.io/npm/dt/micro-github-latest.svg?style=flat-square
@@ -189,10 +191,10 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [license]: http://michaelhsu.mit-license.org/
 [greenkeeper-badge]: https://badges.greenkeeper.io/evenchange4/micro-github-latest.svg
 [greenkeeper]: https://greenkeeper.io/
-[dockerhub-auto-badge]: https://img.shields.io/docker/automated/evenchange4/micro-github-latest.svg
+[dockerhub-auto-badge]: https://img.shields.io/docker/automated/evenchange4/micro-github-latest.svg?style=flat-square
 [dockerhub]: https://hub.docker.com/r/evenchange4/micro-github-latest/
-[dockerPulls-badge]: https://img.shields.io/docker/pulls/evenchange4/micro-github-latest.svg
+[dockerPulls-badge]: https://img.shields.io/docker/pulls/evenchange4/micro-github-latest.svg?style=flat-square
 [dockerSize]: https://microbadger.com/images/evenchange4/micro-github-latest
 [dockerSize-badge]: https://images.microbadger.com/badges/image/evenchange4/micro-github-latest.svg
-[prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg
+[prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square
 [prettier]: https://github.com/prettier/prettier
