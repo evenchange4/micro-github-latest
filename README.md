@@ -24,8 +24,6 @@
 
 Download from GitHub [latest release](https://github.com/evenchange4/micro-github-latest/releases/latest).
 
-[![Release][github-release-badge]][github-release]
-
 ```
 $ ORIGIN=$YOUR_DOMAIN \
   ACCESS_TOKEN=$GITHUB_ACCESS_TOKEN \
@@ -196,7 +194,5 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [dockerPulls-badge]: https://img.shields.io/docker/pulls/evenchange4/micro-github-latest.svg
 [dockerSize]: https://microbadger.com/images/evenchange4/micro-github-latest
 [dockerSize-badge]: https://images.microbadger.com/badges/image/evenchange4/micro-github-latest.svg
-[github-release]: https://github.com/evenchange4/micro-github-latest/releases/latest
-[github-release-badge]: https://github-release-version.herokuapp.com/github/evenchange4/micro-github-latest/release.svg?style=flat
 [prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg
 [prettier]: https://github.com/prettier/prettier
