@@ -147,6 +147,8 @@ $ docker build -t mirco-medium-api .
 $ git push
 ```
 
+> Note: Multi-stage builds are a new feature in Docker 17.05.
+
 ### Github release / NPM release
 
 ```
