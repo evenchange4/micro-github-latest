@@ -3,7 +3,7 @@
 ## [HEAD]
 > Unreleased
 
-## [v1.1.2]
+## [v1.1.3]
 > Aug 10, 2017
 
 * chore(node): add node version info
