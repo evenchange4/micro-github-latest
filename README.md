@@ -4,10 +4,6 @@
 [![Travis][travis-badge]][travis]
 [![Codecov Status][codecov-badge]][codecov]
 [![Github Tag][githubTag-badge]][githubTag]
-[![npm downloads][npm-downloads]][npm]
-[![npm][npm-badge]][npm]
-[![Docker Automated build][dockerhub-auto-badge]][dockerhub]
-[![Docker Build Status][dockerhub-badge]][dockerhub]
 
 [![Dependency Status][dependency-badge]][dependency]
 [![devDependency Status][devDependency-badge]][devDependency]
@@ -15,7 +11,6 @@
 [![Greenkeeper badge][greenkeeper-badge]][greenkeeper]
 [![prettier][prettier-badge]][prettier]
 [![license][license-badge]][license]
-
 
 ## How To Use
 
@@ -29,6 +24,8 @@
 
 Download from GitHub [latest release](https://github.com/evenchange4/micro-github-latest/releases/latest).
 
+[![Release][github-release-badge]][github-release]
+
 ```
 $ ORIGIN=$YOUR_DOMAIN \
   ACCESS_TOKEN=$GITHUB_ACCESS_TOKEN \
@@ -40,6 +37,10 @@ $ ORIGIN=$YOUR_DOMAIN \
 ### c. Docker image
 
 Pull from [dockerhub][dockerhub].
+
+[![Docker Automated build][dockerhub-auto-badge]][dockerhub]
+[![Docker Pulls][dockerPulls-badge]][dockerhub]
+[![Docker Size][dockerSize-badge]][dockerSize]
 
 ```
 $ docker pull evenchange4/micro-github-latest:latest
@@ -53,6 +54,9 @@ $ docker run --rm -it \
 ### d. NPM CLI
 
 Install from [npm][npm].
+
+[![npm downloads][npm-downloads]][npm]
+[![npm][npm-badge]][npm]
 
 ```
 $ npm i micro-github-latest -g
@@ -188,7 +192,11 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [greenkeeper-badge]: https://badges.greenkeeper.io/evenchange4/micro-github-latest.svg
 [greenkeeper]: https://greenkeeper.io/
 [dockerhub-auto-badge]: https://img.shields.io/docker/automated/evenchange4/micro-github-latest.svg
-[dockerhub-badge]: https://img.shields.io/docker/build/evenchange4/micro-github-latest.svg
 [dockerhub]: https://hub.docker.com/r/evenchange4/micro-github-latest/
+[dockerPulls-badge]: https://img.shields.io/docker/pulls/evenchange4/micro-github-latest.svg
+[dockerSize]: https://microbadger.com/images/evenchange4/micro-github-latest
+[dockerSize-badge]: https://images.microbadger.com/badges/image/evenchange4/micro-github-latest.svg
+[github-release]: https://github.com/evenchange4/micro-github-latest/releases/latest
+[github-release-badge]: https://github-release-version.herokuapp.com/github/evenchange4/micro-github-latest/release.svg?style=flat
 [prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg
 [prettier]: https://github.com/prettier/prettier
