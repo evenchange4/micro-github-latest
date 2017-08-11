@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* chore(npm): ncu update eslint
+
 ## [v1.1.3]
 > Aug 10, 2017
 
