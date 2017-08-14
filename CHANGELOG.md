@@ -3,6 +3,12 @@
 ## [HEAD]
 > Unreleased
 
+* feat(Header): response with github origin header.
+* feat(debug): add debug for dev.
+* feat(cache): Internal 304 cache handler for GitHub Api.  🎉
+
+> Note: Making a conditional request and receiving a 304 response does not count against your Rate Limit, so we encourage you to use it whenever possible. Ref: https://developer.github.com/v3/#conditional-requests
+
 ## [v1.1.4]
 > Aug 12, 2017
 

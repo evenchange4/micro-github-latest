@@ -15,7 +15,7 @@ const latest = async (req, res) => {
 
     if (!assetURL) throw new Error('Asset not found.');
 
-    return redirect(res, 302, assetURL);
+    return redirect(res, 302, assetURL, response.meta);
   } catch (error) {
     return send(res, 404, error);
   }
