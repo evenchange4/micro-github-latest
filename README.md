@@ -15,6 +15,10 @@
 [![prettier][prettier-badge]][prettier]
 [![license][license-badge]][license]
 
+## Feature
+
+- [x] Internal 304 cache handler for GitHub Api. [PR#5](https://github.com/evenchange4/micro-github-latest/pull/5)
+
 ## How To Use
 
 ### a. Deploy to Now.sh

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return correct store 1`] = `
+Object {
+  "evenchange4/micro-github-latest": Object {
+    "status": 302,
+  },
+}
+`;
+
+exports[`should return correct store 2`] = `
+Object {
+  "evenchange4/micro-github-latest": Object {
+    "status": 302,
+  },
+  "evenchange4/micro-medium-api": Object {
+    "status": 200,
+  },
+}
+`;
+
+exports[`should return correct store 3`] = `
+Object {
+  "evenchange4/micro-github-latest": Object {
+    "status": 302,
+  },
+  "evenchange4/micro-medium-api": Object {
+    "status": 201,
+  },
+}
+`;
