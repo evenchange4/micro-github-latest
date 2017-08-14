@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.2.0]
+> Aug 14, 2017
+
 * feat(Header): response with github origin header.
 * feat(debug): add debug for dev.
 * feat(cache): Internal 304 cache handler for GitHub Api.  🎉
