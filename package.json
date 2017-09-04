@@ -1,6 +1,6 @@
 {
   "name": "micro-github-latest",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Microservice for downloading the latest asset of GitHub release.",
   "license": "MIT",
   "repository": "evenchange4/micro-github-latest",
