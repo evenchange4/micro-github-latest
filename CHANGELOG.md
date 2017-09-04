@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.2.1]
+> Sep 04, 2017
+
 * ncu(update): upgrade node to 8.4.0
 
 ## [v1.2.0]
