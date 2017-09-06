@@ -584,8 +584,8 @@ chokidar@1.7.0:
     fsevents "^1.0.0"
 
 ci-info@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.0.1.tgz#e5913b63f7e1fda8db99a3125d45cbabcde55ba9"
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.1.1.tgz#47b44df118c48d2597b56d342e7e25791060171a"
 
 circular-json@^0.3.1:
   version "0.3.3"
@@ -2722,9 +2722,9 @@ normalize-path@^2.0.0, normalize-path@^2.0.1:
   dependencies:
     remove-trailing-separator "^1.0.1"
 
-now@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/now/-/now-8.0.1.tgz#0af57b53675c707e152e6ed79c7b54e574373ae3"
+now@^8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/now/-/now-8.0.2.tgz#8c0b5c77810b5461720ac4aca35bb410a197047b"
 
 npm-run-path@^2.0.0:
   version "2.0.2"
