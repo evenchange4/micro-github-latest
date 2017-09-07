@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "debug": "^3.0.1",
-    "github": "^10.1.0",
+    "github": "^11.0.0",
     "micro": "^8.0.4",
     "micro-compress": "^1.0.0",
     "micro-cors": "^0.0.4",
