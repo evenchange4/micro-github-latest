@@ -73,7 +73,7 @@
     "eslint-plugin-react": "^7.3.0",
     "jest": "^21.0.1",
     "micro-dev": "^1.2.2",
-    "now": "^8.0.2",
+    "now": "^8.1.0",
     "pkg": "^4.2.4",
     "prettier": "^1.6.1",
     "request-promise": "^4.2.1",
