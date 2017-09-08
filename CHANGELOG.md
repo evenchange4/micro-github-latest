@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* ncu(update): github & update yarn to 1.0.1
+
 ## [v1.2.1]
 > Sep 04, 2017
 

@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "debug": "^3.0.1",
-    "github": "^10.1.0",
+    "github": "^11.0.0",
     "micro": "^8.0.4",
     "micro-compress": "^1.0.0",
     "micro-cors": "^0.0.4",
@@ -73,7 +73,7 @@
     "eslint-plugin-react": "^7.3.0",
     "jest": "^21.0.1",
     "micro-dev": "^1.2.2",
-    "now": "^8.1.0",
+    "now": "^8.2.0",
     "pkg": "^4.2.4",
     "prettier": "^1.6.1",
     "request-promise": "^4.2.1",
