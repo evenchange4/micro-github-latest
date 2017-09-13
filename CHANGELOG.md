@@ -3,7 +3,9 @@
 ## [HEAD]
 > Unreleased
 
-* ncu(update): github & update yarn to 1.0.1
+* chore(update): github & update yarn to 1.0.1
+* chore(update): upgrade node to 8.5.0
+* docs(LICENSE): update year
 
 ## [v1.2.1]
 > Sep 04, 2017
