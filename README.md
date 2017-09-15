@@ -128,7 +128,7 @@ Options:
 
 -   node >= 8.5.0
 -   npm >= 5.3.0
--   yarn >= 1.0.1
+-   yarn >= 1.0.2
 
 ```
 $ git clone https://github.com/evenchange4/micro-github-latest.git

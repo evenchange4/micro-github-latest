@@ -3,7 +3,7 @@
 ## [HEAD]
 > Unreleased
 
-* chore(update): github & update yarn to 1.0.1
+* chore(update): github & update yarn to 1.0.2
 * chore(update): upgrade node to 8.5.0
 * docs(LICENSE): update year
 
