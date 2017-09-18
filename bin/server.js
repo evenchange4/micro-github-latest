@@ -14,9 +14,7 @@ const argv = require('yargs')
     describe: 'HTTP server PORT',
   })
   .default('p', 3000)
-  .help('h')
   .alias('h', 'help')
-  .version(() => pkg.version)
   .alias('v', 'version').argv;
 
 console.log(`> [Mirco-github-latest] server is running on port ${argv.p}`); // eslint-disable-line

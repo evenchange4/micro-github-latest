@@ -18,6 +18,7 @@
 ## Feature
 
 - [x] Internal 304 cache handler for GitHub Api. [PR#5](https://github.com/evenchange4/micro-github-latest/pull/5)
+- [x] Handle error 403, fallback to githut releases/latest page when rate limit exceeded. [PR#19](https://github.com/evenchange4/micro-github-latest/pull/19)
 
 ## How To Use
 
