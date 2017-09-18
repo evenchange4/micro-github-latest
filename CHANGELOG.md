@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.3.0]
+> Sep 18, 2017
+
 * chore(update): github & update yarn to 1.0.2
 * chore(update): upgrade node to 8.5.0
 * docs(LICENSE): update year
