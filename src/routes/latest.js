@@ -17,6 +17,14 @@ const latest = async (req, res) => {
 
     return redirect(res, 302, assetURL, response.meta);
   } catch (error) {
+    if (error.code === 403) {
+      return redirect(
+        res,
+        302,
+        `https://github.com/${owner}/${repo}/releases/latest`,
+      );
+    }
+
     return send(res, 404, error);
   }
 };

@@ -6,6 +6,7 @@
 * chore(update): github & update yarn to 1.0.2
 * chore(update): upgrade node to 8.5.0
 * docs(LICENSE): update year
+* feat(403): handle 403, fallback to githut releases/latest page when rate limit exceeded
 
 ## [v1.2.1]
 > Sep 04, 2017
