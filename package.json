@@ -24,7 +24,7 @@
     "dev": "DEBUG=* micro-dev src/index.js",
     "pkg": "rm -rf pkg && pkg . --out-path pkg",
     "eslint": "eslint ./",
-    "format": "prettier --trailing-comma all --single-quote --write '{src,bin}/**/*.js'",
+    "format": "prettier --write '{src,bin}/**/*.js'",
     "test": "NODE_ENV='test' TZ='UTC' jest --coverage --runInBand",
     "test:watch": "npm run test -- --watch"
   },
@@ -61,7 +61,7 @@
     "await-url": "^0.3.0",
     "babel-eslint": "^8.0.0",
     "codecov": "^2.3.0",
-    "eslint": "^4.7.0",
+    "eslint": "^4.7.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.5.0",
     "eslint-config-react-app": "^2.0.0",
@@ -69,7 +69,7 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jest": "^21.1.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.3.0",
     "jest": "^21.1.0",
     "micro-dev": "^1.2.3",
@@ -78,6 +78,10 @@
     "prettier": "^1.7.0",
     "request-promise": "^4.2.1",
     "test-listen": "^1.0.2"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
   },
   "eslintConfig": {
     "parser": "babel-eslint",
@@ -109,13 +113,7 @@
       "jsx-a11y/no-static-element-interactions": 0,
       "react/forbid-prop-types": 0,
       "react/require-default-props": 0,
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true,
-          "trailingComma": "all"
-        }
-      ]
+      "prettier/prettier": "error"
     }
   }
 }
