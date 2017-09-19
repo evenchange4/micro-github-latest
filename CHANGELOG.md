@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* chore(prettier): extract prettier as rc config
+
 ## [v1.3.0]
 > Sep 18, 2017
 
