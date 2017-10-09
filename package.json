@@ -53,7 +53,7 @@
     "micro-compress": "^1.0.0",
     "micro-cors": "^0.0.4",
     "microrouter": "^2.2.3",
-    "ramda": "^0.24.1",
+    "ramda": "^0.25.0",
     "update-notifier": "^2.2.0",
     "yargs": "^9.0.1"
   },
