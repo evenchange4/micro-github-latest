@@ -55,7 +55,7 @@
     "microrouter": "^2.2.3",
     "ramda": "^0.24.1",
     "update-notifier": "^2.2.0",
-    "yargs": "^9.0.1"
+    "yargs": "^10.0.3"
   },
   "devDependencies": {
     "await-url": "^0.3.0",
